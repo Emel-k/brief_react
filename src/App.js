@@ -13,6 +13,11 @@ function MyForm () {
         document.querySelector(".searchbar").value = ""
     }
 
+    function sup(items) {
+        const newTodo = todo.filter(item => todo.indexOf(item) !== todo.indexOf(items))
+        setTodo(newTodo)
+    }
+
     return (
         <div>
             <label>
@@ -28,7 +33,7 @@ function MyForm () {
                 {todo.map((item, id) => (
                     <li key={id}>
                         {item}
-                        <button className="delete" >supprimer</button>
+                        <button className="delete" onClick={e => sup(item)} >supprimer</button>
                     </li>
                 ))}
             </ul>

@@ -36,3 +36,34 @@
     transform: rotate(360deg);
   }
 }
+
+.container{
+  text-align: center;
+}
+
+.align_thing{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+}
+
+.btn-search{
+
+  height: 85px;
+  width: 150px;
+  margin-left: 5px;
+}
+
+.searchbar{
+
+  height: 80px;
+  width: 280px;
+}
+
+.delete{
+  margin: 20px;
+  height: 30px;
+  background: lightblue;
+  border-radius: 50px;
+}
